@@ -1,0 +1,7 @@
+vendor/*
+vendor/
+.git/*
+.git/
+.idea/*
+.idea/
+

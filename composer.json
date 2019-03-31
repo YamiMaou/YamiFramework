@@ -1,0 +1,38 @@
+{
+    "name": "yamitec/yamifw",
+    "description": "SISTEMA DE GESTAO DE EMPRESA COM PHP",
+    "require": {
+        "phroute/phroute": "^2.1",
+        "reginaldo/ephydb": "dev-master",
+        "twig/twig": "2.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maou Yami",
+            "email": "maou@yamitec.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "YamiTec\\": "app/"
+        }
+    },
+    "scripts": {
+        "start": "php -S 0.0.0.0:8080 -t public/",
+        "test": "phpunit"
+    },
+    "scripts-descriptions":{
+        "start": "starting test server"
+    },
+    "config": {
+        "process-timeout":0
+    },
+    "repositories": [
+        {
+            "type":"vcs",
+            "url": "git@github.com:YamiMaou/EphyDB.git"
+        }
+    ]
+}

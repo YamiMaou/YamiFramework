@@ -15,10 +15,10 @@ abstract class RouterInterface implements Router
     private $_inactiveRoutes;
 
     public function __construct($_config){
-        $_config = [
+       /* $_config = [
             "inRoutes" => ["home" => "app\Controllers\HomeController"],
             "Routes" => ["out" => "app\Controllers\HomeController"],
-        ];
+        ];*/
         $this->_activeRoutes = $_config["Routes"];
         $this->_inactiveRoutes = $_config["inRoutes"];
     }
@@ -29,9 +29,9 @@ abstract class RouterInterface implements Router
             $router = new RouteCollector();
             $router->filter("login", function () {
                 if($this->isActive()){
-                    echo "Active <br />";
+                    //echo "Active <br />";
                 } else {
-                    echo "not Active ";
+                    //echo "not Active ";
                 }
             });
             foreach($this->_activeRoutes as  $rota => $controller){

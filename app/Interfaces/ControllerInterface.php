@@ -16,7 +16,7 @@ interface Controller
     public function getStore();
     public function getUpdate($id);
     public function postStore();
-    public function postUpdate($id,$data);
+    public function postUpdate($id);
     public function postDelete($id);
 
 }
@@ -50,7 +50,7 @@ abstract class Controllerinterface implements Controller{
         // TODO: Implement setStore() method.
         echo $data;
     }
-    public function postUpdate($id, $data)
+    public function postUpdate($id)
     {
         // TODO: Implement setUpdate() method.
         echo $data;

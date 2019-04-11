@@ -92,4 +92,10 @@ abstract class RendererInterface implements Renderer
             return false;
         }
     }
+    public function __templateToString($tplModule)
+    {
+        $this->tplModule = file_get_contents($this->template.'/'.$tplModule);
+        $this->string = true;
+        return $this;
+    }
 }

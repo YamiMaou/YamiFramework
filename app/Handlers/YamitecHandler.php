@@ -11,6 +11,18 @@ namespace YamiTec\Handlers;
 use YamiTec\Interfaces\RendererInterface;
 use YamiTec\Interfaces\RouterInterface;
 
+class YtConsole {
+    private $cnf = [];
+    public function __construct( $cnf = []) {
+        $this->cnf = $cnf;
+    }
+
+    public function makeController($controller) {
+        echo $controller;
+        return $this;
+    }
+}
+
 abstract class YamitecHandler extends RouterInterface {
 
     private $_config = [];

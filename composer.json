@@ -13,7 +13,7 @@
             "email": "maou@yamitec.com"
         }
     ],
-    "minimum-stability": "1",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "YamiTec\\": "app/"

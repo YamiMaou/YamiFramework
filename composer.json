@@ -1,6 +1,6 @@
 {
     "name": "yamitec/yamifw",
-    "description": "SISTEMA DE GESTAO DE EMPRESA COM PHP",
+    "description": "a microframework to small applications in PHP",
     "require": {
         "phroute/phroute": "^2.1",
         "reginaldo/ephydb": "dev-master",
